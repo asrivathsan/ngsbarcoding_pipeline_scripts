@@ -176,6 +176,7 @@ thresh=int(sys.argv[3])
 dirlist=os.listdir(path)
 print thresh
 outfile=open(sys.argv[1]+"_summarystats",'w')
+outfile.write("Specimen ID\tCounts of unique sequences(>5)\tCounts of merged sequences (>5)\tFirst dominant sequence\t Second dominant sequence\t Third Dominant sequence\n")
 for name in l2:
 	countsunique,countsmerge,top3= allmerge(path+name+".fa",thresh)
 	countsunique=[str(x) for x in countsunique]
