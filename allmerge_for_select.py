@@ -1,4 +1,6 @@
-#usage script.py infilefasta lengththresh
+#usage script.py listfile pathtodirectory lengththresh
+
+#listfile is a file with list of specimens. The script will find file for each specimen+".fa" and perform all merge. Final output is in the listfile+"_summarystats" file.
 from collections import Counter
 import sys,os
 
